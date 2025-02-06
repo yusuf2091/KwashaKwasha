@@ -1,0 +1,129 @@
+<!-- cctv.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Products</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">  
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="relative flex justify-between items-center p-5 bg-gray-800">
+        <h1 class="text-2xl font-bold"><span class="">Kwasha</span>-<span class="">Kwasha</span></h1>
+        
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="absolute md:hidden text-white text-3xl focus:outline-none right-2">
+            ☰
+        </button>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul id="menu" class="absolute hidden md:flex space-x-6 flex-col md:flex-row absolute md:static md:mt-1 top-10 right-0 w-auto bg-gray-800 md:bg-transparent text-center md:text-left md:rounded-none shadow-lg p-4 md:p-0 z-50">
+                <li><a onclick="window.location.href='index.html#home'" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Home</a></li>
+                <li><a onclick="window.location.href='index.html#products'" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Products</a></li>
+                <li><a onclick="window.location.href='index.html#services'"class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Services</a></li>
+                <li><a onclick="window.location.href='index.html#gallery'" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Gallery</a></li>
+                <li><a onclick="window.location.href='index.html#contact'" class="block py-2 px-4 hover:text-yellow-400 text-xl font-bold">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Back Arrow -->
+    <div class="p-5">
+        <button onclick="window.location.href='index.html#categories'" class="text-white text-2xl">
+            ← Back
+        </button>
+    </div>
+
+    <!-- CCTV Product List -->
+    <section class="p-2">
+        <h2 class="text-3xl font-bold text-center mb-5">CCTV Products</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            <!-- CCTV Product Card -->
+            <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+                <img src="https://media.istockphoto.com/id/1410781771/photo/security-cctv-camera-in-the-dark-and-yellow-light-shines-on-the-camera.jpg?s=612x612&w=0&k=20&c=t46YmlffbCE5HEZabEXl4TO7NaZxIxN8vLgecdyqFj4=" alt="CCTV Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">CCTV Camera 1</h3>
+                <!-- <p class="text-yellow-500 text-lg">N 30,000</p> -->
+                <a href="#contact" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+            </div>
+
+            <!-- Another CCTV Product -->
+            <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+                <img src="https://media.istockphoto.com/id/871704344/photo/mobile-connect-with-security-camera.jpg?s=612x612&w=0&k=20&c=ZqLmm0tORU-rGt0DC9bw3lORPZv6z3CUzWtVTOtpCC8=" alt="CCTV Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">CCTV Camera 2</h3>
+                <!-- <p class="text-yellow-500 text-lg">N 45,500</p> -->
+                <a href="#contact" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+            </div>
+
+            <!-- Another CCTV Product -->
+            <div class="bg-gray-600 p-2 text-center text-white rounded-lg shadow-lg">
+                <img src="https://media.istockphoto.com/id/1977230951/photo/cctv-camera-installed-on-wall-of-the-building-scan-the-area-for-surveillance-purposes-can-be.jpg?s=612x612&w=0&k=20&c=f-Nw4cMVtYRU5Wo5D_625XfSU694lt-pSMx35RtyeiI=" alt="CCTV Camera" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold">CCTV Camera 3</h3>
+                <!-- <p class="text-yellow-500 text-lg">N 50,000</p> -->
+                <a href="#contact" class="mt-4 inline-block px-6 py-2 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-600">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class=" text-left" id="contact">
+
+        <!-- Contact Information -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-800 p-4 py-5 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold">Contact Details</h3>
+                <p class=""><i class="fa-regular fa-envelope p-3"></i>Email: <a href="mailto:kwashakwasha@gmail.com"  class="text-yellow-400">kwashakwasha@gmail.com</a></p>
+                <p class=""><i class="fa-solid fa-phone p-3"></i>Phone: <a href="tel:+2348127693437" class="text-yellow-400">+2348127693437</a></p>
+                <p class=""><i class="fa-solid fa-location-dot p-3"></i>Address: <a href="#map" class="text-yellow-400">Badawa Layout,Zango.</a></p>
+
+                <!-- <p class=""><i class="fa-regular fa-clock p-3"></i>Business Hours: <a href='https://calendar.google.com/calendar/r/eventedit' class="text-yellow-400">Mon - Sun (9:00 AM - 8:00 PM)</a></p> -->
+
+            
+                <!-- Social Media Links -->
+    <section class="p-3 text-left">
+        <h2 class="text-3xl font-bold mb-5">Follow Us</h2>
+        <div class="flex space-x-4 ">
+            <a href="" class="text-3xl hover:text-yellow-400 bg-yellow-500 p-2 px-3 rounded-full"><i class="fa-brands fa-whatsapp text-green-500"></i></a>
+            <a href="" class="text-3xl hover:text-yellow-400 bg-yellow-500 p-2 px-3 rounded-full"><i class="fa-brands fa-facebook-f text-blue-500"></i></a>
+            <a href="" class="text-3xl hover:text-yellow-400 bg-yellow-500 p-2 px-3 rounded-full"><i class="fa-brands fa-tiktok text-black"></i></a>
+            <a href="" class="text-3xl hover:text-yellow-400 bg-yellow-500 p-2 px-3 rounded-full"><i class="fa-brands fa-x-twitter text-black"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-5 mt-10 text-center text-white">
+        <p>&copy; 2025 S&Y Tech</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        // Toggle the menu when the hamburger button is clicked
+        document.getElementById("menu-btn").addEventListener("click", function(event) {
+            // Prevent the click event from propagating to the document body
+            event.stopPropagation();
+            document.getElementById("menu").classList.toggle("hidden");
+        });
+    
+        // Hide the menu when clicking outside of the menu or the hamburger button
+        document.addEventListener("click", function(event) {
+            // Check if the click is outside the menu and hamburger button
+            const menu = document.getElementById("menu");
+            const menuBtn = document.getElementById("menu-btn");
+    
+            if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+                // Hide the menu if clicked outside
+                menu.classList.add("hidden");
+            }
+        });
+    
+        // Prevent menu from closing when clicking inside the menu
+        document.getElementById("menu").addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+    </script>
+</body>
+</html>
